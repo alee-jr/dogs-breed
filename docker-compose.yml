@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  dog-breed:
+    container_name: dog-breed
+    env_file:
+      - .env
+    build:
+      context: ./
+    image: dog-breed
+    ports:
+      - "3000:3000"
